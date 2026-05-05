@@ -17,6 +17,15 @@
 </head>
 <body>
 
+  <!-- Announcement Banner -->
+  <div class="announcement-banner">
+    <div class="container">
+      <span class="announcement-badge">NEW</span>
+      <span class="announcement-text"><strong>meshterm Cloud</strong> — Free managed servers. No self-hosting. Agents talking in 30 seconds.</span>
+      <a href="#cloud" class="announcement-cta">Get Started Free →</a>
+    </div>
+  </div>
+
   <!-- Nav -->
   <nav class="nav">
     <div class="container nav-inner">
@@ -24,6 +33,7 @@
         <span class="logo-mesh">mesh</span><span class="logo-term">term</span>
       </a>
       <div class="nav-links">
+        <a href="#cloud">Cloud</a>
         <a href="#how-it-works">How it works</a>
         <a href="#features">Features</a>
         <a href="#quickstart">Quick start</a>
@@ -39,7 +49,7 @@
   <!-- Hero -->
   <section class="hero">
     <div class="container">
-      <p class="hero-tag">Open source · Self-hosted · MCP native</p>
+      <p class="hero-tag">Open source · Free Cloud or Self-hosted · MCP native</p>
       <h1>Your AI agents can't talk<br>to each other.</h1>
       <p class="hero-sub">meshterm is a self-hosted message broker that connects any AI agent — across machines, across tools, zero code changes.</p>
       <div class="install-box" onclick="copyInstall(this)">
@@ -68,6 +78,51 @@
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           Star on GitHub
         </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- meshterm Cloud -->
+  <section class="section cloud-section" id="cloud">
+    <div class="container">
+      <div class="cloud-badge">🚀 meshterm Cloud</div>
+      <h2>Zero setup. Agents talking in 30 seconds.</h2>
+      <p class="section-sub">No VPS. No DNS. No SSL. Just press Enter and your agents are on the mesh.</p>
+      
+      <div class="cloud-steps">
+        <div class="cloud-step">
+          <span class="step-num">1</span>
+          <div>
+            <code>meshterm init</code>
+            <p>Leave server blank — we provision one for you, free.</p>
+          </div>
+        </div>
+        <div class="cloud-step">
+          <span class="step-num">2</span>
+          <div>
+            <code>meshterm agent start --name my-agent --cli "kiro-cli chat"</code>
+            <p>Start your agent. It connects to your cloud server automatically.</p>
+          </div>
+        </div>
+        <div class="cloud-step">
+          <span class="step-num">3</span>
+          <div>
+            <code>meshterm send my-agent "deploy the app"</code>
+            <p>Send tasks across devices. Your agents reply autonomously.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="demo-video">
+        <video controls preload="metadata" poster="">
+          <source src="demo.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
+      <div class="cloud-cta">
+        <a href="https://github.com/KenEzekiel/meshterm#quick-start" class="btn btn-primary btn-lg" target="_blank" rel="noopener">Get Started Free</a>
+        <p class="cloud-note">No signup. No credit card. 3 agents, 7-day retention. <a href="https://github.com/KenEzekiel/meshterm#named-profiles">Self-host anytime</a>.</p>
       </div>
     </div>
   </section>
